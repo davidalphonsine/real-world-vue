@@ -14,7 +14,6 @@ export default {
     listeners() {
       return {
         // pass all components listeners directly to input
-        // comment to commit
         ...this.$listeners,
         // Override input listener to work with v-model
         input: event => this.$emit("input", event.target.value)
